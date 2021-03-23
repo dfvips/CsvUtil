@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mybatis.Mapper">
+	<insert id="fillTable">
+		INSERT INTO customer (good_name,
+		order_num,
+		person_name,
+		person_phone,
+		person_place,
+		good_id,
+		time,
+		shop)
+		VALUES
+		(#{0},#{1},#{2},#{3},#{4},#{5},#{6},#{7})
+	</insert>
+</mapper>
